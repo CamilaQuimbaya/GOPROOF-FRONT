@@ -1,0 +1,34 @@
+<app-dashboard title="Restaurantes"></app-dashboard>
+<div class="modal">
+ <div class="body1">
+    <div  class="card1">
+        <div class="row">
+            <div class="col-sm">
+                <div class="info">
+                    <p>aadasdasdasd</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <p>asdadadadasd</p>
+                <div class="img"></div>
+            </div>
+        </div>   
+    </div>
+ </div>
+</div>
+<div  id="map"></div>
+<div class="body">   
+    <!--<input type="checkbox" id="react">
+    <label for="react" class="btnabrir">Abrir minicard</label> -->
+    <div class="overflow-scroll" style="height: 70vh; width: 450px;">
+    <div class="card" *ngFor="let rest of listres">
+        
+        <div class="img"><img  src='{{rest.ciudad}}' alt=""></div>
+        <div class="info" >
+            <span>{{rest.nombre}}<br></span>
+            <span>{{rest.numero}}<br></span>
+            <span>{{rest.horario}}</span>
+        </div>
+    </div>
+</div>
+</div>

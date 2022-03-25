@@ -1,0 +1,94 @@
+main {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  overflow: hidden;
+}
+
+.bg {
+  background: linear-gradient(to right, #232526, #414345);
+  height: 100vh;
+}
+
+.tx {
+  margin-top: 75%;
+  color: white;
+  font-size: 20px;
+}
+
+.bg-bt {
+  background: linear-gradient(to right, #DE6262, #FFB88C);
+  color: #fff;
+  box-shadow: 0 5px 30px -5px rgba(255, 136, 136, 0.07), 0 10px 30px -5px rgba(255, 136, 136, 0.0503), 0 15px 30px -5px rgba(255, 136, 136, 0.0417), 0 20px 30px -5px rgba(255, 136, 136, 0.035), 0 25px 30px -5px rgba(255, 136, 136, 0.0283), 0 0px 30px -5px rgba(255, 136, 136, 0.0197);
+  padding: 10px;
+  min-width: 40%;
+  font-size: 15px;
+  margin-inline: 20%;
+}
+
+.bg-2 {
+  background-image: url("../../../assets/img/bk_bfl.png");
+  height: 100vh;
+  opacity: 40%;
+  width: 80vh;
+  margin-left: -5rem;
+  object-fit: cover;
+  border-radius: 0% 0% 0% 15%;
+  box-shadow: -5px 0px 30px 30px;
+}
+
+.log img {
+  position: absolute;
+  top: 5rem;
+  left: 38rem;
+  filter: drop-shadow(-25px 10px 15px #232526);
+  width: 50%;
+}
+
+.im img {
+  position: absolute;
+  top: 18rem;
+  left: 40rem;
+  width: 45%;
+  filter: drop-shadow(-25px 0px 15px #232526);
+}
+
+@media (max-width:800px) {
+  .bg {
+    min-height: 100%;
+  }
+
+  .tx {
+    padding-inline: 1rem;
+    margin-top: 40%;
+    text-align: center;
+  }
+
+  .bg-bt {
+    padding: 5px;
+    min-width: 35%;
+    margin-inline: 30%;
+    margin-bottom: 5rem;
+  }
+
+  .bg-2 {
+    height: 100vh;
+    max-width: 100%;
+    margin-left: 0;
+    border-radius: 0% 20% 0% 0%;
+  }
+
+  .log img {
+    top: 5rem;
+    left: 0;
+    margin-inline: 25%;
+    width: 50%;
+  }
+
+  .im img {
+    top: 35rem;
+    left: 22%;
+    width: 60%;
+  }
+}

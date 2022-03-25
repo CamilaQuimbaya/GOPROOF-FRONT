@@ -1,0 +1,28 @@
+.map-container {
+  position: absolute;
+  height: 70vh;
+  right: 400px;
+  top: 120px;
+  width: 700px;
+  border-radius: 60px;
+}
+@media only screen and (max-width: 1200px){
+  .map-container{
+    position: absolute;
+    height: 60vh;
+    right: 100px;
+    top: 150px;
+    width: 400px;
+    border-radius: 60px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .map-container{
+    position: absolute;
+    height: 60vh;
+    right: 100px;
+    top: 150px;
+    width: 400px;
+    border-radius: 60px;
+  }
+}

@@ -1,0 +1,24 @@
+<div class="body">
+<div class="main">
+  <input type="checkbox" id="chk" aria-hidden="true">
+
+  <div class="login">
+    <form [formGroup]="miFormulario" (ngSubmit)="login()">
+        <label for="" aria-hidden="true">login</label>
+        <input type="text" formControlName="email" placeholder="email">
+        <input type="password" formControlName="password" placeholder="password">
+        <button type="submit">login</button>
+        <div class="log">
+          <p>No estas registrado?</p>
+        </div>
+        <div class="log">
+          <p><a routerLink="/auth/registro">Registrate aqui</a></p>
+        </div>
+    </form>
+
+
+
+
+  </div>
+</div>
+</div>

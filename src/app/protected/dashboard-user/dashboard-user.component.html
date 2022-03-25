@@ -1,0 +1,67 @@
+<section>
+  <input type="checkbox" id="nav-toggle">
+  <div class="sidebar">
+    <div class="sidebar-brand">
+      <span><img src="../../../assets/img/logonew.svg" alt="" width="150px"></span>
+    </div>
+    <div class="sidebar-menu">
+      <ul>
+        <li><button class="btn-dash" routerLink="/home"><span><i class="fa-solid fa-house"></i></span>
+        <span class="menu">Home</span></button></li>
+        <li><button class="btn-dash" routerLink="/restaurants">
+              <span><i class="fa-solid fa-store"></i></span>
+            <span class="menu">Restaurantes</span>
+      </button></li>
+        <li><button class="btn-dash" routerLink="/categories">
+          <span><i class="fa-solid fa-filter"></i></span>
+          <span class="menu">Categorias</span>
+        </button></li>
+        <li><button class="btn-dash" routerLink="/benefits">
+          <span><i class="fa-solid fa-gift"></i></span>
+          <span class="menu">Beneficios</span>
+        </button></li>
+        <li><button class="btn-dash">
+          <span><i class="fa-solid fa-heart"></i></span>
+          <span class="menu">Favoritos</span>
+        </button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light  navb">
+        <div class="container-fluid">
+          <button class="btn-dash"> <span><label for="nav-toggle"><i class="fa-solid fa-bars fa hamburguer text-white"></i></label></span></button>
+              <h1 class="text-white"></h1>
+              <i class="fa-solid fa-bell text-white belldash "></i>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> <i class="fa-solid fa-bars fa  text-white"></i></span>
+          </button>
+          <div class="collapse navbar-collapse  userpro" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="{{usuario.profile}}" alt="" width="50px " class="userprof">
+                </a>
+                <ul class="dropdown-menu menuser" aria-labelledby="navbarDropdownMenuLink">
+                  <li routerLink="/myprofile"><a class="dropdown-item  menuitem">Mi perfil</a></li>
+                  <li routerLink="/mypoints"><a class="dropdown-item menuitem">Mis puntos</a></li>
+                  <li><a class="dropdown-item menuitem">Mis reservas</a></li>
+                  <li><a class="dropdown-item menuitem"  (click)="logout()">cerrar sesión</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+    </header>
+  </div>
+</section>
+
+<div class="infouser">
+    <H2>Bienvenido </H2>
+    <h3>{{usuario.name}}</h3>
+    <!-- <pre>{{ usuario | json }}</pre> -->
+</div>
