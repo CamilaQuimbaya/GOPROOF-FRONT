@@ -13,7 +13,7 @@ import { MypointsComponent } from './components/mypoints/mypoints.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { ValidarTokenGuard } from './guards/validar-token.guard';
 import { BeforeLandingComponent } from './components/before-landing/before-landing.component';
-
+import {ModalRestaurantComponent} from './components/modal-restaurant/modal-restaurant.component'
 
 const routes: Routes = [
   {path: '', component: BeforeLandingComponent},
@@ -27,6 +27,7 @@ const routes: Routes = [
   {path: 'myprofile', component: MiProfileComponent},
   {path: 'mypoints', component: MypointsComponent},
   {path: 'booking', component:BookingsComponent},
+  {path: 'modal', component:ModalRestaurantComponent},
   {path: 'auth',
   loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },

@@ -26,6 +26,7 @@ import { AuthModule } from './auth/auth.module';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 import { BeforeLandingComponent } from './components/before-landing/before-landing.component';
+import { ModalRestaurantComponent } from './components/modal-restaurant/modal-restaurant.component';
 
 
 
@@ -52,6 +53,7 @@ import { BeforeLandingComponent } from './components/before-landing/before-landi
     UpdateProfileComponent,
 
     BeforeLandingComponent,
+      ModalRestaurantComponent,
 
   ],
   imports: [
