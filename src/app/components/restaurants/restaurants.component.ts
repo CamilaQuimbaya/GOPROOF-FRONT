@@ -1,7 +1,9 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Map, tileLayer, circle, marker } from 'leaflet'
 import { Restaurant } from 'src/app/models/restaurant';
+import { DatarestaurantService } from 'src/app/services/datarestaurant.service';
 
 //service
 import { RestaurantService } from 'src/app/services/restaurant.service';
@@ -19,7 +21,7 @@ export class RestaurantsComponent implements OnInit, AfterViewInit {
   restaurantForm: FormGroup;
   restaurantesdb: Restaurant[] = [];
 
-  constructor(private fb: FormBuilder, private restaurantservice: RestaurantService) { 
+  constructor(private fb: FormBuilder, private restaurantservice: RestaurantService, private dataRestaurant:DatarestaurantService, private router:Router) { 
     this.restaurantForm = this.fb.group({
       nombre: ['', Validators.required],
       descripcion: ['', Validators.required],
@@ -36,6 +38,22 @@ export class RestaurantsComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.getForm();
+  }
+  idData(rest:any){
+    this.router.navigate(['/profile']);
+    this.dataRestaurant.nombre = rest.nombre
+    this.dataRestaurant.descripcion = rest.descripcion
+    this.dataRestaurant.menu = rest.menu
+    this.dataRestaurant.categoria = rest.categoria
+    this.dataRestaurant.numero = rest.numero
+    this.dataRestaurant.ciudad = rest.ciudad
+    this.dataRestaurant.parqueadero = rest.parqueadero
+    this.dataRestaurant.horario = rest.horario
+    this.dataRestaurant.longitud = rest.longitud
+    this.dataRestaurant.latitud = rest.latitud
+
+
+    console.log(rest.nombre)
   }
   getForm(){
     this.restaurantservice.getRestaurant().subscribe(data =>{

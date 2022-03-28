@@ -23,7 +23,7 @@
     <div class="overflow-scroll" style="height: 70vh; width: 450px;">
     <div class="card" *ngFor="let rest of listres">
         
-        <div class="img"><img  src='{{rest.ciudad}}' alt=""></div>
+        <div (click)="idData(rest)" class="img"><img  src='{{rest.ciudad}}' alt=""></div>
         <div class="info" >
             <span>{{rest.nombre}}<br></span>
             <span>{{rest.numero}}<br></span>

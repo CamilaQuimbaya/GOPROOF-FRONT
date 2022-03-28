@@ -13,6 +13,7 @@ import { MypointsComponent } from './components/mypoints/mypoints.component';
 import { BookingsComponent } from './components/bookings/bookings.component';
 import { ValidarTokenGuard } from './guards/validar-token.guard';
 import { BeforeLandingComponent } from './components/before-landing/before-landing.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 const routes: Routes = [
@@ -34,7 +35,8 @@ const routes: Routes = [
   loadChildren: () => import('./protected/protected.module').then(m => m.ProtectedModule),
   canActivate: [ValidarTokenGuard],
   canLoad: [ValidarTokenGuard]
-  }
+  },
+  {path: 'profile', component:ProfileComponent}
 
 
 
