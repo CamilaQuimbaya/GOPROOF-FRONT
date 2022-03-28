@@ -1,0 +1,108 @@
+.body{display: block;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    color: aliceblue;
+    
+}
+.card{
+    margin-left: 10vw;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 40px;
+    background-image: linear-gradient(43deg, #1d1d1d 0%, #464646 46%, #191919 100%);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+.card:hover{
+    transition: 0.3s;
+    background: linear-gradient(90deg, #DE6262 0%, #FFB88C 100%);
+}
+.back{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 70vw;
+    height: 35vh;
+    border-radius: 50px;
+    margin-left: 1vw;
+    z-index: 1;
+}
+.imagen{
+    background-image: url("https://images-ext-2.discordapp.net/external/YWDLZarKhZ-rZNxRs3DzElS83YncFQI9HsTW0ODo2dg/https/image.shutterstock.com/image-photo/table-scene-assorted-take-out-260nw-1744848056.jpg");
+    width: 70vw;
+    background-size: cover;
+    height: 20vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vw;
+
+}
+.logo{
+    margin-top: 10vh;
+    display: flex;
+    width: 15vw;
+    height: 25vh;
+    border-radius: 50px;
+    z-index: 5;
+}
+.desc{
+    text-align: justify;
+    margin-right: 10vw;
+    font-weight: 400;
+
+}
+.tittle{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 8vh;
+}
+h1{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* From cssbuttons.io by @Jedi-hongbin */
+.backrest {
+    bottom: 10vh;
+    right: 10vw;
+    position: absolute;
+    display: flex;
+    height: 3em;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(43deg, #1d1d1d 0%, #464646 46%, #191919 100%);
+    color: whitesmoke;
+    border-radius: 40px;
+   }
+   
+   .backrest > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.4s ease-in;
+    color: wheat;
+   }
+   
+   .backrest:hover > svg {
+    font-size: 1.2em;
+    transform: translateX(-5px);
+   }
+   
+   .backrest:hover {
+    background: linear-gradient(90deg, #DE6262 0%, #FFB88C 100%);
+    transform: translateY(-2px);
+   }
+   
+
+ 
