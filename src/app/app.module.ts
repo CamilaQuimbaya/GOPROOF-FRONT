@@ -27,6 +27,7 @@ import { BookingsComponent } from './components/bookings/bookings.component';
 import { UpdateProfileComponent } from './components/update-profile/update-profile.component';
 import { BeforeLandingComponent } from './components/before-landing/before-landing.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { RegistroBookingComponent } from './components/registro-booking/registro-booking.component';
 
 
 
@@ -54,6 +55,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 
     BeforeLandingComponent,
      ProfileComponent,
+     RegistroBookingComponent,
 
   ],
   imports: [

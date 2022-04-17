@@ -1,7 +1,7 @@
 <app-dashboard title="Mis Reservas"></app-dashboard>
-<div class="body row"  >
-  <div class="card col-4 "  *ngFor="let data_booking of listaBooking">
-    <div class="card2 col-4" >
+<div class="body"  >
+  <div class="card  " *ngFor="let data_booking of listaBooking" >
+    <div class="card2"  >
       <ul class="text-white">
         <li>{{data_booking.titulo}}</li>
         <li>{{data_booking.descripcion}}</li>
@@ -9,16 +9,16 @@
         <li>{{data_booking.hora}}</li>
         <li>{{data_booking.lugar}}</li>
         <li>
-          <i class="fa-solid fa-trash-can"></i>
+          <i class="fa-solid fa-trash-can  trash" (click)="eliminarBooking(data_booking._id)"></i>
         </li>
       </ul>
     </div>
   </div>
   </div>
   <div class="body2">
-      <button class="cssbuttons-io-button"> Nueva  Reserva
+      <button class="cssbuttons-io-button" routerLink="/createBooking"> Nueva  Reserva
           <div class="icon">
-            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg%22%3E<path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+
           </div>
         </button>
   </div>

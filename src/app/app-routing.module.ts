@@ -14,6 +14,8 @@ import { BookingsComponent } from './components/bookings/bookings.component';
 import { ValidarTokenGuard } from './guards/validar-token.guard';
 import { BeforeLandingComponent } from './components/before-landing/before-landing.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { RegisterComponent } from './auth/pages/register/register.component';
+import { RegistroBookingComponent } from './components/registro-booking/registro-booking.component';
 
 
 const routes: Routes = [
@@ -28,6 +30,7 @@ const routes: Routes = [
   {path: 'myprofile', component: MiProfileComponent},
   {path: 'mypoints', component: MypointsComponent},
   {path: 'booking', component:BookingsComponent},
+  {path: "createBooking", component: RegistroBookingComponent},
   {path: 'auth',
   loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },

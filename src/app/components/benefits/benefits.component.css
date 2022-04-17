@@ -1,7 +1,7 @@
 .body {
   position: absolute;
   top:80px;
-  left: 450px;
+  left: 350px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +12,9 @@
 
 /* C */
 .c {
-  min-width: 700px;
-  width: 700px;
-  height: 200px;
+  min-width: 600px;
+  width: 900px;
+  height: 350px;
   border-radius: 12px;
   padding: 20px;
   padding-bottom: 40px;
@@ -27,7 +27,7 @@
   position: relative;
   overflow: hidden;
   background: hsl(0 0% 90%);
-
+  z-index: 0;
   box-sizing: border-box;
 }
 
@@ -110,18 +110,18 @@ input:not(:checked)+label+.ci {
 
 /* CARDS*/
 .body2{
-  top:345px;
-  left: 450px;
+  top:415px;
+  left: 420px;
   display: flex;
   justify-content: center;
   position: absolute;
-  min-height: 50vh;
+
   margin: 0;
   font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
 }
 .card {
-  width: 190px;
-  height: 254px;
+  width: 200px;
+  height: 234px;
   background: #f0f0f0;
   border-radius: 10px;
   text-align: center;

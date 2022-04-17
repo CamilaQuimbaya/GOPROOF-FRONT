@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DatarestaurantService } from 'src/app/services/datarestaurant.service';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-categories',
@@ -8,7 +9,7 @@ import Swal from 'sweetalert2';
 export class CategoriesComponent implements OnInit {
   @Input() title:any;
 
-  constructor() { }
+  constructor( public dataRestaurant:DatarestaurantService) { }
 
   ngOnInit(): void {
   }
