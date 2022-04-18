@@ -1,0 +1,36 @@
+<app-dashboard title="  Crear reserva"></app-dashboard>
+<div class="container-form">
+  <form class="row g-4 container-log text-center" [formGroup]="formBooki" (ngSubmit)="infoBooking()">
+       <h1 class="text-light fs-3 text-center fw-bold">crear</h1>
+      <div class="row justify-content-center">
+        <label for="titulo" class="form-label text-light">titulo</label>
+        <input type="text" formControlName="titulo" class="form-control" >
+        <p class="fw-bold text-danger" *ngIf="formBooki.get('titulo')?.hasError('required') && formBooki.get('titulo')?.touched">campo requerido</p>
+          </div>
+      <div class="row justify-content-center">
+        <label for="descripcion" class="form-label text-light">descripcion</label>
+        <input type="text" formControlName="descripcion" class="form-control" >
+        <p class="fw-bold text-danger" *ngIf="formBooki.get('descripcion')?.hasError('required') && formBooki.get('descripcion')?.touched">campo requerido</p>
+      </div>
+      <div class="row justify-content-center">
+        <label for="fecha" class="form-label text-light">fecha</label>
+        <input type="text" formControlName="fecha" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="formBooki.get('fecha')?.hasError('required') && formBooki.get('fecha')?.touched">campo requerido</p>
+      </div>
+      <div class="row justify-content-center">
+        <label for="hora" class="form-label text-light">hora</label>
+        <input type="text" formControlName="hora" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="formBooki.get('hora')?.hasError('required') && formBooki.get('hora')?.touched">campo requerido</p>
+      </div>
+      <div class="row justify-content-center">
+        <label for="lugar" class="form-label text-light">lugar</label>
+        <input type="text" formControlName="lugar" class="form-control">
+        <p class="fw-bold text-danger" *ngIf="formBooki.get('lugar')?.hasError('required') && formBooki.get('lugar')?.touched">campo requerido</p>
+      </div>
+
+      <div class="col-12">
+        <button type="submit"><i class="fa-solid fa-location-arrow "></i>
+          <span>Añadir</span></button>
+      </div>
+    </form>
+  </div>
